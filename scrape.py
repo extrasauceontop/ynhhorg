@@ -1,6 +1,8 @@
 from sgselenium.sgselenium import webdriver
 from bs4 import BeautifulSoup as bs
 import pandas as pd
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 
 locator_domains = []
 page_urls = []
